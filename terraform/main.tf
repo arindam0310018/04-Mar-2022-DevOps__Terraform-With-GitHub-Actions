@@ -28,3 +28,13 @@ resource "azurerm_resource_group" "rg2" {
   name     = "AM-RG-Github-2"
   location = "westeurope"
 }
+
+resource "azurerm_resource_group" "rg3" {
+  name     = "AM-RG-Github-3"
+  location = "westeurope"
+}
+
+resource "azurerm_resource_group" "rg4" {
+  name     = "AM-RG-Github-4"
+  location = "westeurope"
+}
