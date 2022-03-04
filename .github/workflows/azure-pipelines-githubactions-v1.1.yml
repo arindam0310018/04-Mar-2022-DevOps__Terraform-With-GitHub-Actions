@@ -1,9 +1,10 @@
-########################################
+#########################################################################
 # v1.1 Github Actions Pipelines
 # Added Environment - Dev
 # Added Approvers in Environment Dev 
 # Condition applied in Terraform Apply
-########################################
+# Upgrade tf Version from 0.14.8 - 1.1.2 (Last release of Year 2021)
+#########################################################################
 
 name: 'v1.1'
 
@@ -31,28 +32,28 @@ jobs:
     - name: 'Terraform Format'
       uses: hashicorp/terraform-github-actions@master
       with:
-        tf_actions_version: 0.14.8
+        tf_actions_version: 1.1.2
         tf_actions_subcommand: 'fmt'
         tf_actions_working_dir: "./terraform"
         
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master
       with:
-        tf_actions_version: 0.14.8
+        tf_actions_version: 1.1.2
         tf_actions_subcommand: 'init'
         tf_actions_working_dir: "./terraform"
 
     - name: 'Terraform Validate'
       uses: hashicorp/terraform-github-actions@master
       with:
-        tf_actions_version: 0.14.8
+        tf_actions_version: 1.1.2
         tf_actions_subcommand: 'validate'
         tf_actions_working_dir: "./terraform"
         
     - name: 'Terraform Plan'
       uses: hashicorp/terraform-github-actions@master
       with:
-        tf_actions_version: 0.14.8
+        tf_actions_version: 1.1.2
         tf_actions_subcommand: 'plan'
         tf_actions_working_dir: "./terraform"
 
@@ -60,6 +61,6 @@ jobs:
       if: github.ref == 'refs/heads/master'
       uses: hashicorp/terraform-github-actions@master
       with:
-        tf_actions_version: 0.14.8
+        tf_actions_version: 1.1.2
         tf_actions_subcommand: 'apply'
         tf_actions_working_dir: "./terraform"
