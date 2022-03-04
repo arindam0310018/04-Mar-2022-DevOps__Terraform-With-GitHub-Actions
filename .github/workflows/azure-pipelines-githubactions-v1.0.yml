@@ -1,5 +1,6 @@
 #####################################################################
 # v1.0 Github Actions Pipelines
+# Workflow Dispatcher helps to Run the Pipeline manually - Line 9
 # Setup Secrets in Github to Reference in Pipeline - Line 14 - 17
 #####################################################################
 
