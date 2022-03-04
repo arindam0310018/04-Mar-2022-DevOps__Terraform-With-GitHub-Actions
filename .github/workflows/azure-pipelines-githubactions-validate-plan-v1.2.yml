@@ -3,7 +3,7 @@
 # Template - Tf Install, Validate, Plan
 #########################################################################
 
-name: 'v1.2'
+name: 'v1.2 - Validate and Plan'
 
 on: [workflow_dispatch]
 
