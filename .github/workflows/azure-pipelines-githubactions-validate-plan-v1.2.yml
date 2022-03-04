@@ -1,6 +1,7 @@
 #########################################################################
 # v1.2 Github Actions Pipelines
 # Template - Tf Install, Validate, Plan
+# Yaml is exact similar to v1.1 minus Deploy
 #########################################################################
 
 name: 'v1.2 - Validate and Plan'
